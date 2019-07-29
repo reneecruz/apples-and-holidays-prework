@@ -69,6 +69,7 @@ end
   #   Fourth Of July: Fireworks, BBQ
   # etc.
 
+
 def all_supplies_in_holidays(holiday_hash)
     holiday_hash.each do |key, value|
     seasons = Array.new
@@ -79,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
       i = 0 
       while i < value[holi].length
         if i+1 < value[holi].length
-          holidays << "#{value[holi][i]},"
+          holidays << "#{value[holi][i]}, "
         else
           holidays << "#{value[holi][i]}"
         end  
@@ -96,6 +97,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
+  
   # holiday_hash.each do |key, value|
   #   key.to_s
   #   puts "#{key}:#{value}"
