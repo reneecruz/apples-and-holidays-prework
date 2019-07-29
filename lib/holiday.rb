@@ -34,9 +34,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
 
   holiday_hash[:winter][:christmas] << "#{supply}"
   holiday_hash[:winter][:new_years] << "#{supply}"
-  
-  #binding.pry
-
 end
 
 
@@ -54,17 +51,12 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
     holiday_hash
 end
-  #binding.pry
 
-#binding.pry
-
-#binding.pry
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
+  
   holiday_hash[:winter].values.flatten
-  #binding.pry
-
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -75,13 +67,10 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
+
   holiday_hash.each do |key, value|
     key.to_s
-    value.to_s
-    puts "#{key}:" 
-    puts "#{value}"
-    binding.pry
+    puts "#{key}:#{value}"
   end
 end
 
